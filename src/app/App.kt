@@ -66,6 +66,11 @@ class App : RComponent<RProps, AppUiState>() {
                                     state.uiState.buttonText = "You are already Invited, Check your Email"
                                 }
                             }
+
+                            3 -> {
+                                state.uiState.isInviteSent = true
+                                state.uiState.buttonText = "You are already In team"
+                            }
                             else -> {
                                 console.log("Something went wrong :(")
                             }
